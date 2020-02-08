@@ -1,10 +1,11 @@
 package com.zmy.gmall.ums.service.impl;
 
+import com.alibaba.dubbo.config.annotation.Service;
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
 import com.zmy.gmall.ums.entity.AdminRoleRelation;
 import com.zmy.gmall.ums.mapper.AdminRoleRelationMapper;
 import com.zmy.gmall.ums.service.AdminRoleRelationService;
-import org.springframework.stereotype.Service;
+import org.springframework.stereotype.Component;
 
 /**
  * <p>
@@ -14,7 +15,8 @@ import org.springframework.stereotype.Service;
  * @author Lfy
  * @since 2020-02-07
  */
-@Service
+@Component
+@Service(version = "1.0")
 public class AdminRoleRelationServiceImpl extends ServiceImpl<AdminRoleRelationMapper, AdminRoleRelation> implements AdminRoleRelationService {
 
 }

@@ -21,6 +21,7 @@
             <artifactId>fastjson</artifactId>
             <version>1.2.56</version>
         </dependency>
+        <!--swagger2的核心包-->
         <dependency>
             <groupId>io.springfox</groupId>
             <artifactId>springfox-swagger2</artifactId>

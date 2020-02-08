@@ -1,8 +1,12 @@
 package com.zmy.gmall.admin;
 
+import com.alibaba.dubbo.config.spring.context.annotation.EnableDubbo;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import springfox.documentation.swagger2.annotations.EnableSwagger2;
 
+@EnableSwagger2
+@EnableDubbo
 @SpringBootApplication
 public class GmallAdminWebApplication {
 
