@@ -16,7 +16,6 @@ import org.springframework.stereotype.Component;
  * @since 2020-02-07
  */
 @Component
-@Service(version = "1.0")
 public class MemberProductCategoryRelationServiceImpl extends ServiceImpl<MemberProductCategoryRelationMapper, MemberProductCategoryRelation> implements MemberProductCategoryRelationService {
 
 }

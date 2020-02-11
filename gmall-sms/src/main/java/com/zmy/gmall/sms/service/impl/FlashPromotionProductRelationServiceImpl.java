@@ -1,6 +1,5 @@
 package com.zmy.gmall.sms.service.impl;
 
-import com.alibaba.dubbo.config.annotation.Service;
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
 import com.zmy.gmall.sms.entity.FlashPromotionProductRelation;
 import com.zmy.gmall.sms.mapper.FlashPromotionProductRelationMapper;
@@ -16,7 +15,7 @@ import org.springframework.stereotype.Component;
  * @since 2020-02-07
  */
 @Component
-@Service(version = "1.0")
+
 public class FlashPromotionProductRelationServiceImpl extends ServiceImpl<FlashPromotionProductRelationMapper, FlashPromotionProductRelation> implements FlashPromotionProductRelationService {
 
 }

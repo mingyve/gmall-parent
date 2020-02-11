@@ -1,11 +1,13 @@
 package com.zmy.gmall.admin.pms.controller;
 
 import com.alibaba.dubbo.config.annotation.Reference;
-import com.zmy.gmall.admin.pms.vo.PmsBrandParam;
 import com.zmy.gmall.pms.service.BrandService;
-import com.zmy.gmall.ums.to.CommonResult;
+import com.zmy.gmall.pms.vo.PmsBrandParam;
+import com.zmy.gmall.to.CommonResult;
+import com.zmy.gmall.vo.PageInfoVo;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
+import lombok.extern.log4j.Log4j2;
 import org.springframework.validation.BindingResult;
 import org.springframework.validation.annotation.Validated;
 import org.springframework.web.bind.annotation.*;
@@ -15,6 +17,8 @@ import java.util.List;
 /**
  * 品牌功能Controller
  */
+@Log4j2
+@CrossOrigin
 @RestController
 @Api(tags = "PmsBrandController",description = "商品品牌管理")
 @RequestMapping("/brand")
@@ -67,11 +71,10 @@ public class PmsBrandController {
                             @RequestParam(value = "pageNum", defaultValue = "1") Integer pageNum,
                             @RequestParam(value = "pageSize", defaultValue = "5") Integer pageSize) {
         CommonResult commonResult = new CommonResult();
-
         //TODO 根据品牌名称分页获取品牌列表
-
-
-        return commonResult;
+        log.info(keyword);
+        PageInfoVo pageInfoVo = brandService.beandPageInfo(keyword,pageNum,pageSize);
+        return commonResult.success(pageInfoVo);
     }
 
     @ApiOperation(value = "根据编号查询品牌信息")

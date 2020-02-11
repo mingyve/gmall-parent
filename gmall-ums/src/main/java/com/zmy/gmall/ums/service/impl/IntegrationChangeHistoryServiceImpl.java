@@ -1,6 +1,5 @@
 package com.zmy.gmall.ums.service.impl;
 
-import com.alibaba.dubbo.config.annotation.Service;
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
 import com.zmy.gmall.ums.entity.IntegrationChangeHistory;
 import com.zmy.gmall.ums.mapper.IntegrationChangeHistoryMapper;
@@ -16,7 +15,6 @@ import org.springframework.stereotype.Component;
  * @since 2020-02-07
  */
 @Component
-@Service(version = "1.0")
 public class IntegrationChangeHistoryServiceImpl extends ServiceImpl<IntegrationChangeHistoryMapper, IntegrationChangeHistory> implements IntegrationChangeHistoryService {
 
 }

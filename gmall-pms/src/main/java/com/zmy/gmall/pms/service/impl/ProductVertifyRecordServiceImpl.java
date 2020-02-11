@@ -1,6 +1,5 @@
 package com.zmy.gmall.pms.service.impl;
 
-import com.alibaba.dubbo.config.annotation.Service;
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
 import com.zmy.gmall.pms.entity.ProductVertifyRecord;
 import com.zmy.gmall.pms.mapper.ProductVertifyRecordMapper;
@@ -16,7 +15,6 @@ import org.springframework.stereotype.Component;
  * @since 2020-02-07
  */
 @Component
-@Service(version = "1.0")
 public class ProductVertifyRecordServiceImpl extends ServiceImpl<ProductVertifyRecordMapper, ProductVertifyRecord> implements ProductVertifyRecordService {
 
 }

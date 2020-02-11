@@ -1,9 +1,9 @@
 package com.zmy.gmall.admin.pms.controller;
 
 import com.alibaba.dubbo.config.annotation.Reference;
-import com.zmy.gmall.admin.pms.vo.PmsProductCategoryParam;
+import com.zmy.gmall.pms.vo.PmsProductCategoryParam;
 import com.zmy.gmall.pms.service.ProductCategoryService;
-import com.zmy.gmall.ums.to.CommonResult;
+import com.zmy.gmall.to.CommonResult;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
 import org.springframework.validation.BindingResult;
@@ -81,6 +81,7 @@ public class PmsProductCategoryController {
     @GetMapping(value = "/list/withChildren")
     public Object listWithChildren() {
         //TODO 查询所有一级分类及子分类
+
         return new CommonResult().success(null);
     }
 }

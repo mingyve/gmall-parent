@@ -1,6 +1,5 @@
 package com.zmy.gmall.pms.service.impl;
 
-import com.alibaba.dubbo.config.annotation.Service;
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
 import com.zmy.gmall.pms.entity.ProductAttributeValue;
 import com.zmy.gmall.pms.mapper.ProductAttributeValueMapper;
@@ -16,7 +15,6 @@ import org.springframework.stereotype.Component;
  * @since 2020-02-07
  */
 @Component
-@Service(version = "1.0")
 public class ProductAttributeValueServiceImpl extends ServiceImpl<ProductAttributeValueMapper, ProductAttributeValue> implements ProductAttributeValueService {
 
 }

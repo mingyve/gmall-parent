@@ -3,7 +3,7 @@ package com.zmy.gmall.admin.pms.controller;
 import com.alibaba.dubbo.config.annotation.Reference;
 import com.zmy.gmall.pms.entity.SkuStock;
 import com.zmy.gmall.pms.service.SkuStockService;
-import com.zmy.gmall.ums.to.CommonResult;
+import com.zmy.gmall.to.CommonResult;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
 import org.springframework.web.bind.annotation.*;

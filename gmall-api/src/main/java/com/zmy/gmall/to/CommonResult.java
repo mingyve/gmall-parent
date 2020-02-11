@@ -1,4 +1,4 @@
-package com.zmy.gmall.ums.to;
+package com.zmy.gmall.to;
 
 import com.alibaba.fastjson.JSON;
 import org.springframework.validation.BindingResult;

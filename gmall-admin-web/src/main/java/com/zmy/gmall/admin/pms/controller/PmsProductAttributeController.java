@@ -1,9 +1,9 @@
 package com.zmy.gmall.admin.pms.controller;
 
 import com.alibaba.dubbo.config.annotation.Reference;
-import com.zmy.gmall.admin.pms.vo.PmsProductAttributeParam;
+import com.zmy.gmall.pms.vo.PmsProductAttributeParam;
 import com.zmy.gmall.pms.service.ProductAttributeService;
-import com.zmy.gmall.ums.to.CommonResult;
+import com.zmy.gmall.to.CommonResult;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiImplicitParam;
 import io.swagger.annotations.ApiImplicitParams;

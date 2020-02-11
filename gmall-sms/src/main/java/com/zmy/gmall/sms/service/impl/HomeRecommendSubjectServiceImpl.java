@@ -1,6 +1,5 @@
 package com.zmy.gmall.sms.service.impl;
 
-import com.alibaba.dubbo.config.annotation.Service;
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
 import com.zmy.gmall.sms.entity.HomeRecommendSubject;
 import com.zmy.gmall.sms.mapper.HomeRecommendSubjectMapper;
@@ -16,7 +15,6 @@ import org.springframework.stereotype.Component;
  * @since 2020-02-07
  */
 @Component
-@Service(version = "1.0")
 public class HomeRecommendSubjectServiceImpl extends ServiceImpl<HomeRecommendSubjectMapper, HomeRecommendSubject> implements HomeRecommendSubjectService {
 
 }

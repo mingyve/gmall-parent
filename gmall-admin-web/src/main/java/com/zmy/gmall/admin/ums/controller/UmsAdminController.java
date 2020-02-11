@@ -1,12 +1,12 @@
 package com.zmy.gmall.admin.ums.controller;
 
 import com.alibaba.dubbo.config.annotation.Reference;
-import com.zmy.gmall.admin.ums.vo.UmsAdminLoginParam;
-import com.zmy.gmall.admin.ums.vo.UmsAdminParam;
 import com.zmy.gmall.admin.utils.JwtTokenUtil;
+import com.zmy.gmall.to.CommonResult;
 import com.zmy.gmall.ums.entity.Admin;
 import com.zmy.gmall.ums.service.AdminService;
-import com.zmy.gmall.ums.to.CommonResult;
+import com.zmy.gmall.ums.vo.UmsAdminLoginParam;
+import com.zmy.gmall.ums.vo.UmsAdminParam;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -15,6 +15,7 @@ import org.springframework.validation.BindingResult;
 import org.springframework.web.bind.annotation.*;
 
 import javax.servlet.http.HttpServletRequest;
+import javax.validation.Valid;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
@@ -22,6 +23,7 @@ import java.util.Map;
 /**
  * 后台用户管理
  */
+
 @CrossOrigin
 @RestController
 @Api(tags = "AdminController", description = "后台用户管理")
@@ -39,10 +41,10 @@ public class UmsAdminController {
 
     @ApiOperation(value = "用户注册")
     @PostMapping(value = "/register")
-    public Object register(@RequestBody UmsAdminParam umsAdminParam, BindingResult result) {
-        Admin admin = null;
+    public Object register(@RequestBody  @Valid UmsAdminParam umsAdminParam, BindingResult result) {
+        Admin admin = new Admin();
         //TODO 完成注册功能
-
+        int i = 0/0;
         return new CommonResult().success(admin);
     }
 

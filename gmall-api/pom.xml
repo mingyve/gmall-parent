@@ -8,13 +8,21 @@
         <version>1.0-SNAPSHOT</version>
     </parent>
     <modelVersion>4.0.0</modelVersion>
-
+    <properties>
+        <java.version>1.8</java.version>
+        <springboot.version>2.2.4.RELEASE</springboot.version>
+    </properties>
     <artifactId>gmall-api</artifactId>
     <dependencies>
         <dependency>
             <groupId>com.zmy.gmall</groupId>
             <artifactId>gmall-common</artifactId>
             <version>1.0-SNAPSHOT</version>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-aop</artifactId>
+            <version>${springboot.version}</version>
         </dependency>
         <dependency>
             <groupId>com.alibaba.boot</groupId>
@@ -39,8 +47,12 @@
             <version>5.3</version>
         </dependency>
 
-
-
+        <dependency>
+            <groupId>org.hibernate.validator</groupId>
+            <artifactId>hibernate-validator</artifactId>
+            <version>6.0.18.Final</version>
+            <scope>compile</scope>
+        </dependency>
 
     </dependencies>
 </project>

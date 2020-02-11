@@ -1,4 +1,4 @@
-package com.zmy.gmall.admin.pms.vo;
+package com.zmy.gmall.pms.vo;
 
 
 import lombok.Data;

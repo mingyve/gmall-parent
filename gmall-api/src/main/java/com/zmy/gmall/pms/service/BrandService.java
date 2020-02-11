@@ -2,6 +2,7 @@ package com.zmy.gmall.pms.service;
 
 import com.zmy.gmall.pms.entity.Brand;
 import com.baomidou.mybatisplus.extension.service.IService;
+import com.zmy.gmall.vo.PageInfoVo;
 
 /**
  * <p>
@@ -13,4 +14,5 @@ import com.baomidou.mybatisplus.extension.service.IService;
  */
 public interface BrandService extends IService<Brand> {
 
+    PageInfoVo beandPageInfo(String keyword, Integer pageNum, Integer pageSize);
 }
