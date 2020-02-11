@@ -1,16 +1,17 @@
 package com.zmy.gmall.oms.entity;
 
-import java.math.BigDecimal;
-import com.baomidou.mybatisplus.annotation.TableName;
 import com.baomidou.mybatisplus.annotation.IdType;
-import com.baomidou.mybatisplus.annotation.TableId;
 import com.baomidou.mybatisplus.annotation.TableField;
-import java.io.Serializable;
+import com.baomidou.mybatisplus.annotation.TableId;
+import com.baomidou.mybatisplus.annotation.TableName;
 import io.swagger.annotations.ApiModel;
 import io.swagger.annotations.ApiModelProperty;
 import lombok.Data;
 import lombok.EqualsAndHashCode;
 import lombok.experimental.Accessors;
+
+import java.io.Serializable;
+import java.math.BigDecimal;
 
 /**
  * <p>
@@ -111,7 +112,7 @@ public class OrderItem implements Serializable {
     @TableField("gift_growth")
     private Integer giftGrowth;
 
-    @ApiModelProperty(value = "商品销售属性:[{"key":"颜色","value":"颜色"},{"key":"容量","value":"4G"}]")
+    @ApiModelProperty(value = "商品销售属性:[{\"key\":\"颜色\",\"value\":\"颜色\"},{\"key\":\"容量\",\"value\":\"4G\"}]")
     @TableField("product_attr")
     private String productAttr;
 
